@@ -5,12 +5,15 @@ def draw_square():
     window.bgcolor('red')
 
     brad = turtle.Turtle()
-    brad.shape('turtle')
-    brad.color('black')
+    brad.color('yellow')
     brad.speed(1000)
-    for x in [randint(0,15)*5 for x in xrange(1,2000)]:
-        brad.forward(x)
-        brad.right(x)
+    for z in xrange(100):
+        for x in xrange(40):
+            for y in xrange(4):
+                brad.forward(3000)
+                brad.right(90)
+            brad.right(10)
+        brad.forward(20)
     window.exitonclick()
 
 draw_square()
