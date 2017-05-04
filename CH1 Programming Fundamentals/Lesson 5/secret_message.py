@@ -1,8 +1,14 @@
-from os import listdir
+from os import listdir, rename 
+from string import digits
 
-def rename_files():
+def rename_files(directory):
     # get file names
-    files = listdir('prank')
-    print files
+    files = listdir(directory)
 
-rename_files()
+    # loop through files
+    for file in files:
+        file = directory + file
+        new_name = file.translate(None, digits)
+        rename(file, new_name)
+
+rename_files('prank/')
