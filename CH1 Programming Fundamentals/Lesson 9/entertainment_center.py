@@ -64,6 +64,5 @@ the_hunger_games = media.Movie(title, storyline, image, trailer)
 
 movies = [toy_story, ratatouille, space_jam, the_hunger_games]
 
-print media.Movie.__doc__
 
 
