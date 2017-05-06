@@ -2,6 +2,9 @@ import webbrowser
 from PIL import Image
 
 class Movie():
+    '''This class provides a way to store movie info'''
+    VALID_RATINGS = ['G','PG', 'PG-13', 'R']
+
     def __init__(self, title, storyline, poster_image,
                  youtube_trailer):
         self.title = title
